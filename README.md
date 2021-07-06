@@ -14,8 +14,20 @@ Goals:
 
 6- Brainstorm on getting https to work on chaoss/augur
 
-Files
+
+
+Files:
 
 app.py is a practice "hello world" file
 
 login.html and loginTest.py are a first attempt at https integration.
+
+
+
+Useful Links:
+
+Helpful flask website: https://www.tutorialspoint.com/flask/flask_http_methods.htm
+
+chaoss/augur github: https://github.com/chaoss/augur
+
+CHAOSS Main Page: https://chaoss.community/about/

@@ -2,11 +2,11 @@ Bryan Prichard's Flask Testing Page
 
 Goals:
 
-1- Make a local flask server
+1- Make a local flask server (Complete)
 
 2- Add https to a local flask server
 
-3- test on flask 1.1.4 as the newest version of flask may be causing issues
+3- test on flask 1.1.4 as the newest version of flask may be causing issues (Complete, flask 2.0.1 was not the issue)
 
 4- research into getting a https certificate
 

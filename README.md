@@ -6,7 +6,7 @@ Directions:
 
 2- open the command line using ctl + `
 
-3- naviagate to flask
+3- naviagate to flasktesting21
 
 4- run source venv/Scripts/activate
 

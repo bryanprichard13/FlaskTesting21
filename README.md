@@ -1,5 +1,17 @@
 Bryan Prichard's Flask Testing Page
 
+Directions:
+
+1- go to visual studio
+
+2- open the command line using ctl + `
+
+3- naviagate to flask
+
+4- run source venv/Scripts/activate
+
+5- then use Python nameHere.py
+
 Goals:
 
 1- Make a local flask server (Complete)

@@ -1,12 +1,19 @@
+#This is a study document by Bryan Prichard in which I analyze this Python code
+
 import http.server
+#imports the python module "http.server" which is used to make web servers
 import socketserver
+#imports a framework for connecting networt servers
 import logging
+#imports a standard library for releasing log messages
 import cgi
+#imports common gateway interface to exchange data between the web server and a routine script
 import json
 from pathlib import Path
 import re
 
 PORT = 8003
+#sets "PORT" for future use
 
 class ServerHandler(http.server.SimpleHTTPRequestHandler):
 
@@ -17,11 +24,13 @@ class ServerHandler(http.server.SimpleHTTPRequestHandler):
             print("'path' is missing for data: " + json_data)
             return
         log_file = Path(json_data["path"]).stem
+        #ends program if the path is incomplete
 
         worker_name = re.search("[a-z_]{1,20}worker", log_file).group()
         if not worker_name:
             print("Failed to get worker name, so cannot associate input data with any augur worker. Data: " + json_data)
             return
+        #worker name not present
 
         if "error" not in json_data:
             print("'error' is missing for data: " + json_data)
